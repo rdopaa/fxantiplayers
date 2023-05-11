@@ -13,8 +13,8 @@ AddEventHandler("playerConnecting", function (name, kick, defer)
     defer.done()
 end)
 
-RegisterNetEvent('fx:acdontstop')
-AddEventHandler('fx:acdontstop',function(source)
+RegisterServerEvent('fx:acdontstop',function()
+    local source = source
     local xPlayer = ESX.GetPlayerFromId(source)
     if xPlayer.getGroup() ~= 'owner' or xPlayer.getGroup() ~= 'superadmin' or xPlayer.getGroup() ~= 'admin' then
         DropPlayer(source, 'Kicked for touching Server Resources')
