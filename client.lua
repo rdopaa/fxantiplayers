@@ -17,17 +17,16 @@ end)
 -- CONFIG GENERAL ANTI PLAYERS -- | INFINITE AMMO - GODMODE - DAMAGE - ANTI-EXPLOSIONS |
 CreateThread(function()
     while true do 
-        Wait(300 * 1000) -- 5 minutes
+        Wait(300 * 1000) -- Verificar cada 5 minutos
         local source = source
         local PlayerPed = PlayerPedId()
-        local PlayerId = PlayerId()
         if Config.GeneralAntiPlayers then 
             if DoesEntityExist(PlayerPed) then
                 Wait(50)
                 -- ANTI INFINITE AMMO
                 SetPedInfiniteAmmoClip(PlayerPed, false)
                 -- ANTI GOD-MODE 
-                SetPlayerInvincible(PlayerId(), false)
+                SetPlayerInvincible(PlayerPed, false)
                 SetEntityInvincible(PlayerPed, false)
                 -- ANTI DAMAGE
                 SetEntityCanBeDamaged(PlayerPed, true)
