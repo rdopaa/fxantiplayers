@@ -6,7 +6,10 @@ author 'fxDopa#1648'
 
 version '1.0'
 
-description 'Anti Resource on Client Stop and Start | Prevents Cheaters'
+description 'Simple resource | Detect users when restarting or stopping resources | Avoid traps and more'
 
 server_script 'server.lua'
-client_script 'client.lua'
+client_scripts {
+    'config.lua',
+    'client.lua'
+}
