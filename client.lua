@@ -2,15 +2,11 @@ ESX = exports['es_extended']:getSharedObject()
 
 --- ANTI ENSURE, STOP AND START ---
 AddEventHandler("onClientResourceStop", function(resourceName)
-    local _src = source
-    CancelEvent()
-    TriggerServerEvent('fx:acdontstop', GetPlayerServerId(PlayerId()))
+    TriggerServerEvent('fx:acdontstop')
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
-    local _src = source
-    CancelEvent()
-    TriggerServerEvent('fx:acdontstop', GetPlayerServerId(PlayerId()))
+    TriggerServerEvent('fx:acdontstop')
 end)
 
 
