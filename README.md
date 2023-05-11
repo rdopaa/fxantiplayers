@@ -4,6 +4,11 @@ With this we prevent any user who is not an admin from not being allowed to rest
 You can modify and use it in your own way.
 ------------------------------------------------
 
+UPDATES: 11/5
+*AntiGodMode - Anti Infinite Ammo - Anti Damage Explosions*
+*Check Money when the user has more than CONFIG.LUA (Config.MoneyCount = amount) kick the player*
+
+
 ⭐ I would really appreciate a star ⭐
 
 **PREVIEW WHEN I STOP RESOURCE**
