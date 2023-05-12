@@ -27,7 +27,7 @@ CreateThread(function()
                 -- ANTI DAMAGE
                 SetEntityCanBeDamaged(PlayerPed, true)
                 ResetEntityAlpha(PlayerPed)
-                -- ANTI EXPLOSIONS
+                -- ANTI EXPLOSIONS DAMAGE
                 N_0x4757f00bc6323cfe(GetHashKey("WEAPON_EXPLOSION"), 0.0) 
                 SetEntityProofs(PlayerPed, false, true, true, false, false, false, 1, false)    
             end
